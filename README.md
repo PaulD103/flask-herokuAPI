@@ -1,10 +1,11 @@
 # flask-herokuAPI
 
 ## Requirements
-* [Python](https://www.python.org): A recent Python 3 interpreter to run the Flask backend on.
+* [Python](https://www.python.org): A recent Python 3 interpreter to run the Flask backend on. <br>
 
 ## Creating a Flask API Backend
 The next step is to create the Flask project. For this, open your terminal and change your directory to a place, where you want to create your API. <br>
+
 Now type this into your terminal. <br>
 
 **Create directory** <br>
@@ -12,18 +13,23 @@ Now type this into your terminal. <br>
 **Move into this directory** <br>
 `cd api` <hr><br>
 
+
+### Unix-based operating systems
 I always create a virtual environment called venv in my project directory, so let's do that now: <br>
 `$ python3 -m venv venv` <br>
-After that you have to activate that environment: <br>
-`$ source venv/bin/activate
-(venv) $ _` <br>
 
+After that you have to activate that environment: <br>
+`$ source venv/bin/activate` <br>
+`(venv) $ _` <br>
+
+### For Windows
 Note that the above is for Unix-based operating systems. If you are using Windows, then you will do this instead: <br>
 `$ python -m venv venv` <br>
 `$ venv\Scripts\activate` <br>
 `(venv) $ _` <hr><br>
 
 For this simple example you need only one Python package - **Flask**: <br>
+
 `(venv) $ pip install flask python-dotenv` <br>
 
 For this example I'm going to create a small, single file and single endpoint application. Here is my Flask API project, written as a single file called _api.py_:
@@ -51,8 +57,10 @@ I also added the **FLASK_ENV** variable, with a setting of **development**, whic
 
 ## Run your project
 At this point this basic Flask project is complete. To make sure that it is working well you can start it: <br>
+
 `(venv) $ flask run` <br>
-This will be the output:
+
+This will be the output in the terminal:
 ```
  * Serving Flask app "api.py" (lazy loading)
  * Environment: development
