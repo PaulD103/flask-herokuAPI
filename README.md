@@ -76,4 +76,6 @@ This will be the output in the terminal:
  * Debugger is active!
  * Debugger PIN: 673-234-166
 ```
-To stop the Flask server press Ctrl-C.
+To stop the Flask server press Ctrl-C. <br><br>
+
+## Deploy your api to Heroku
