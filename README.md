@@ -15,8 +15,8 @@ Now type this into your terminal. <br>
 I always create a virtual environment called venv in my project directory, so let's do that now: <br>
 `$ python3 -m venv venv` <br>
 After that you have to activate that environment: <br>
-`$ source venv/bin/activate` <br>
-`(venv) $ _` <br>
+`$ source venv/bin/activate
+(venv) $ _` <br>
 
 Note that the above is for Unix-based operating systems. If you are using Windows, then you will do this instead: <br>
 `$ python -m venv venv` <br>
