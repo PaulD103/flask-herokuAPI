@@ -9,9 +9,11 @@ The next step is to create the Flask project. For this, open your terminal and c
 Now type this into your terminal. <br>
 
 **Create directory** <br>
+
 `mkdir api` <br>
 
 **Move into this directory** <br>
+
 `cd api` <hr><br>
 
 
