@@ -36,7 +36,7 @@ Note that the above is for Unix-based operating systems. If you are using Window
 `$ venv\Scripts\activate` <br>
 `(venv) $ _` <hr><br>
 
-For this simple example you need only one Python package - **Flask**: <br>
+For this simple example you need only two Python packages - **flask** and **python-dotenv**: <br>
 
 `(venv) $ pip install flask python-dotenv` <br>
 
