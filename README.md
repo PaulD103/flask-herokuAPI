@@ -103,7 +103,6 @@ web: gunicorn api:app
 * Choose an name for your app and a region <br>
 
 ### Step 6: Login into your Heroku
-First of all, you have to login: <br>
 `$ heroku login` <br>
 
 ### Step 7: Remote your project to your app
