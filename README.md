@@ -107,10 +107,14 @@ web: gunicorn api:app
 
 ### Step 7: Remote your project to your app
 `(venv) $ heroku git:remote -a [nameOfYourAppOnHeroku]` <br>
-_In my case:_ `heroku git:remote -a flask-herokuapi` <br>
+_In my case:_ `(venv) $ heroku git:remote -a flask-herokuapi` <br>
 
 ### Step 8: Deploy your application
 Commit your code to the repository and deploy it to Heroku using Git. <br>
 `(venv) $ git add .` <br>
 `(venv) $ git commit -am "flask-api"` <br>
-`(venv) $ git push heroku master` <br>
+`(venv) $ git push heroku main` <br><br>
+
+## Visit your api:
+https://[nameOfYourAppOnHeroku].herokuapp.com/data <br>
+_In my case:_ https://flask-herokuapi.herokuapp.com/data <br>
