@@ -2,7 +2,8 @@
 
 ## Requirements
 * [Python](https://www.python.org): A recent Python 3 interpreter to run the Flask backend on. <br>
-* [Git](https://git-scm.com): Git, to communicate with your API over the Heroku CLI. <br><br>
+* [Git](https://git-scm.com): To communicate with your API over the Heroku CLI. <br>
+* [Brew](https://brew.sh): For the installation of heroku. <br><br>
 
 ## Creating a Flask API Backend
 The next step is to create the Flask project. For this, open your terminal and change your directory to a place, where you want to create your API. <br>
