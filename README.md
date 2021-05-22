@@ -1,7 +1,8 @@
 # flask-herokuAPI
 
 ## Requirements
-* [Python](https://www.python.org): A recent Python 3 interpreter to run the Flask backend on. <br><br>
+* [Python](https://www.python.org): A recent Python 3 interpreter to run the Flask backend on. <br>
+* [Git](https://git-scm.com): Git, to communicate with your API over the Heroku CLI. <br><br>
 
 ## Creating a Flask API Backend
 The next step is to create the Flask project. For this, open your terminal and change your directory to a place, where you want to create your API. <br>
@@ -10,11 +11,11 @@ Now type this into your terminal. <br>
 
 **Create directory** <br>
 
-`mkdir api` <br>
+`$ mkdir api` <br>
 
 **Move into this directory** <br>
 
-`cd api` <hr><br>
+`$ cd api` <hr><br>
 
 
 ### Unix-based operating systems
@@ -79,3 +80,38 @@ This will be the output in the terminal:
 To stop the Flask server press Ctrl-C. <br><br>
 
 ## Deploy your api to Heroku
+
+### Step 1: Install Heroku CLI
+`brew tap heroku/brew && brew install heroku` <br>
+
+Above command is for Mac, for other systems you can [click here](https://devcenter.heroku.com/articles/heroku-cli) <br>
+
+### Step 2: Install Gunicorn
+`pip3 install gunicorn` <br>
+
+### Step 3: Create requirements.txt
+`pip3 freeze > requirements.txt` <br>
+
+### Step 4: Create a file named _Procfile_
+```
+web: gunicorn api:app
+```
+
+### Step 5: Create an app in Heroku
+* Go to the [Heroku page](https://www.heroku.com) and create an account, if you haven't done already.
+* Click on **Create new app** under **New**
+* Choose an name for your app and a region <br>
+
+### Step 6: Login into your Heroku
+First of all, you have to login: <br>
+`$ heroku login` <br>
+
+### Step 7: Remote your project to your app
+`$ heroku git:remote -a [nameOfYourAppOnHeroku]` <br>
+_In my case:_ `heroku git:remote -a flask-herokuapi` <br>
+
+### Step 8: Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git. <br>
+`$ git add .` <br>
+`$ git commit -am "flask-api"` <br>
+`$ git push heroku master` <br>
