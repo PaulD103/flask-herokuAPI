@@ -82,15 +82,15 @@ To stop the Flask server press Ctrl-C. <br><br>
 ## Deploy your api to Heroku
 
 ### Step 1: Install Heroku CLI
-`brew tap heroku/brew && brew install heroku` <br>
+`(venv) $ brew tap heroku/brew && brew install heroku` <br>
 
 Above command is for Mac, for other systems you can [click here](https://devcenter.heroku.com/articles/heroku-cli) <br>
 
 ### Step 2: Install Gunicorn
-`pip3 install gunicorn` <br>
+`(venv) $ pip3 install gunicorn` <br>
 
 ### Step 3: Create requirements.txt
-`pip3 freeze > requirements.txt` <br>
+`(venv) $ pip3 freeze > requirements.txt` <br>
 
 ### Step 4: Create a file named _Procfile_
 ```
@@ -103,14 +103,14 @@ web: gunicorn api:app
 * Choose an name for your app and a region <br>
 
 ### Step 6: Login into your Heroku
-`$ heroku login` <br>
+`(venv) $ heroku login` <br>
 
 ### Step 7: Remote your project to your app
-`$ heroku git:remote -a [nameOfYourAppOnHeroku]` <br>
+`(venv) $ heroku git:remote -a [nameOfYourAppOnHeroku]` <br>
 _In my case:_ `heroku git:remote -a flask-herokuapi` <br>
 
 ### Step 8: Deploy your application
 Commit your code to the repository and deploy it to Heroku using Git. <br>
-`$ git add .` <br>
-`$ git commit -am "flask-api"` <br>
-`$ git push heroku master` <br>
+`(venv) $ git add .` <br>
+`(venv) $ git commit -am "flask-api"` <br>
+`(venv) $ git push heroku master` <br>
